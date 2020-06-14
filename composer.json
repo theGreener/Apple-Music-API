@@ -1,0 +1,42 @@
+{
+    "name": "thegreener/apple-music-api",
+    "description": "Apple Music API Wrapper Written in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Green",
+            "email": "andy.neil.green@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4.6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "*",
+        "squizlabs/php_codesniffer": "*",
+        "symfony/debug-pack": "*",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/profiler-pack": "*",
+        "symfony/test-pack": "*",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppleMusic\\": "src/AppleMusic"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "require": "5.1.*"
+        }
+    }
+}

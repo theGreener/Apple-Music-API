@@ -10,17 +10,6 @@ use DateTime;
 
 class AlbumHydrator
 {
-    protected $artworkHydrator;
-    protected $trackHydrator;
-
-    public function __construct(
-        ArtworkHydrator $artworkHydrator,
-        TrackHydrator $trackHydrator
-    ) {
-        $this->artworkHydrator = $artworkHydrator;
-        $this->trackHydrator = $trackHydrator;
-    }
-
     public function hydrate(Album &$album, $data)
     {
         $album

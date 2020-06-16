@@ -8,3 +8,4 @@ docs/phpdoc*
 /vendor/
 /composer.phar
 /reports/
+clover.xml

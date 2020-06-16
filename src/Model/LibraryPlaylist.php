@@ -8,7 +8,7 @@ namespace AppleMusic\Model;
  * Class LibraryPlaylist
  * @package AppleMusic\Model
  */
-class LibraryPlaylists extends Resource
+class LibraryPlaylist extends Resource
 {
     use PlaylistTrait;
 

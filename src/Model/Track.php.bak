@@ -1,0 +1,182 @@
+<?php
+
+declare(strict_types=1);
+
+namespace AppleMusic\Model;
+
+use DateTime;
+
+class Track
+{
+    protected $id;
+    protected $artistName;
+    protected $genreNames;
+    protected $durationInMillis;
+    protected $releaseDate;
+    protected $name;
+    protected $albumName;
+    protected $trackNumber;
+
+    /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param string $id
+     *
+     * @return self
+     */
+    public function setId($id)
+    {
+        $this->id = (string) $id;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getArtistName()
+    {
+        return (string) $this->artistName;
+    }
+
+    /**
+     * @param string $artistName
+     *
+     * @return self
+     */
+    public function setArtistName($artistName)
+    {
+        $this->artistName = (string) $artistName;
+
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getGenreNames()
+    {
+        return $this->genreNames;
+    }
+
+    /**
+     * @param array $genreNames
+     *
+     * @return self
+     */
+    public function setGenreNames($genreNames)
+    {
+        $this->genreNames = $genreNames;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDurationInMillis()
+    {
+        return (int) $this->durationInMillis;
+    }
+
+    /**
+     * @param int $durationInMillis
+     *
+     * @return self
+     */
+    public function setDurationInMillis($durationInMillis)
+    {
+        $this->durationInMillis = (int) $durationInMillis;
+
+        return $this;
+    }
+
+    /**
+     * @return DateTime
+     */
+    public function getReleaseDate()
+    {
+        return $this->releaseDate;
+    }
+
+    /**
+     * @return self
+     */
+    public function setReleaseDate(DateTime $releaseDate)
+    {
+        $this->releaseDate = $releaseDate;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return (string) $this->name;
+    }
+
+    /**
+     * @param string $name
+     *
+     * @return self
+     */
+    public function setName($name)
+    {
+        $this->name = (string) $name;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAlbumName()
+    {
+        return (string) $this->albumName;
+    }
+
+    /**
+     * @param string $albumName
+     *
+     * @return self
+     */
+    public function setAlbumName($albumName)
+    {
+        $this->albumName = (string) $albumName;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTrackNumber()
+    {
+        return (int) $this->trackNumber;
+    }
+
+    /**
+     * @param int $trackNumber
+     *
+     * @return self
+     */
+    public function setTrackNumber($trackNumber)
+    {
+        $this->trackNumber = (int) $trackNumber;
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return sprintf('%s: %s', $this->getTrackNumber(), $this->getName());
+    }
+}

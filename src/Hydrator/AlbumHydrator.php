@@ -36,21 +36,21 @@ class AlbumHydrator
             );
         }
 
-        if (isset($data->attributes->artwork)) {
-            $artwork = new Artwork();
-            $this->artworkHydrator->hydrate($artwork, $data->attributes->artwork);
-            $album->setArtwork($artwork);
-        }
-
-        if (isset($data->relationships->tracks)) {
-            $tracks = new TrackCollection();
-            foreach ($data->relationships->tracks->data as $trackData) {
-                $track = new Track();
-                $this->trackHydrator->hydrate($track, $trackData);
-                $tracks->addItem($track->getId(), $track);
-            }
-
-            $album->setTracks($tracks);
-        }
+//        if (isset($data->attributes->artwork)) {
+//            $artwork = new Artwork();
+//            $this->artworkHydrator->hydrate($artwork, $data->attributes->artwork);
+//            $album->setArtwork($artwork);
+//        }
+//
+//        if (isset($data->relationships->tracks)) {
+//            $tracks = new TrackCollection();
+//            foreach ($data->relationships->tracks->data as $trackData) {
+//                $track = new Track();
+//                $this->trackHydrator->hydrate($track, $trackData);
+//                $tracks->addItem($track->getId(), $track);
+//            }
+//
+//            $album->setTracks($tracks);
+//        }
     }
 }

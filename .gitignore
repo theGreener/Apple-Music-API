@@ -1,5 +1,8 @@
 .DS_Store
 .dat
+.idea
+.php_cs.cache
+.phpcs-cache
 .phpdoc/
 docs/phpdoc*
 /vendor/

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592136559">
-  <project timestamp="1592136559">
+<coverage generated="1592324007">
+  <project timestamp="1592324007">
     <package name="App\AppleMusic">
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/ApiTokenGenerator.php">
         <class name="App\AppleMusic\ApiTokenGenerator" namespace="App\AppleMusic">
@@ -549,6 +549,12 @@
         <line num="80" type="stmt" count="1"/>
         <metrics loc="82" ncloc="69" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="26" coveredelements="26"/>
       </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/ArtistRelationship.php">
+        <class name="AppleMusic\Model\ArtistRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/ArtistResponse.php">
         <class name="AppleMusic\Model\ArtistResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -702,6 +708,12 @@
         <line num="28" type="stmt" count="2"/>
         <metrics loc="29" ncloc="25" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
       </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/CuratorRelationship.php">
+        <class name="AppleMusic\Model\CuratorRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/CuratorResponse.php">
         <class name="AppleMusic\Model\CuratorResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -816,6 +828,12 @@
         <line num="36" type="stmt" count="2"/>
         <metrics loc="38" ncloc="34" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
       </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/GenreRelationship.php">
+        <class name="AppleMusic\Model\GenreRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/GenreResponse.php">
         <class name="AppleMusic\Model\GenreResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -870,6 +888,12 @@
         <line num="24" type="stmt" count="3"/>
         <line num="25" type="stmt" count="3"/>
         <metrics loc="26" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/LibraryArtistRelationship.php">
+        <class name="AppleMusic\Model\LibraryArtistRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/LibraryArtistResponse.php">
         <class name="AppleMusic\Model\LibraryArtistResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
@@ -1077,6 +1101,12 @@
         <line num="172" type="stmt" count="11"/>
         <metrics loc="174" ncloc="158" classes="1" methods="19" coveredmethods="19" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="49" elements="68" coveredelements="68"/>
       </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/MusicVideoRelationship.php">
+        <class name="AppleMusic\Model\MusicVideoRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/MusicVideoResponse.php">
         <class name="AppleMusic\Model\MusicVideoResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -1206,6 +1236,12 @@
         <line num="93" type="stmt" count="6"/>
         <line num="95" type="stmt" count="6"/>
         <metrics loc="97" ncloc="84" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="34" coveredelements="34"/>
+      </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/PlaylistRelationship.php">
+        <class name="AppleMusic\Model\PlaylistRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/PlaylistResponse.php">
         <class name="AppleMusic\Model\PlaylistResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
@@ -1730,6 +1766,12 @@
         <line num="132" type="stmt" count="9"/>
         <metrics loc="134" ncloc="118" classes="1" methods="15" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="33" elements="48" coveredelements="48"/>
       </file>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/StationRelationship.php">
+        <class name="AppleMusic\Model\StationRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/StationResponse.php">
         <class name="AppleMusic\Model\StationResponse" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -1778,57 +1820,11 @@
         </class>
         <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
-    </package>
-    <package name="AppleMusic\Model\Collection">
-      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/Collection/AlbumCollection.php">
-        <class name="AppleMusic\Model\Collection\AlbumCollection" namespace="AppleMusic\Model\Collection" fullPackage="AppleMusic" package="AppleMusic">
-          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/TrackRelationship.php">
+        <class name="AppleMusic\Model\TrackRelationship" namespace="AppleMusic\Model" fullPackage="AppleMusic" package="AppleMusic">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
-        <line num="17" type="method" name="addItem" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <line num="27" type="method" name="getItemByAlbumName" visibility="public" complexity="3" crap="12.00" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <metrics loc="38" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
-      </file>
-      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/Collection/ArrayCollection.php">
-        <class name="AppleMusic\Model\Collection\ArrayCollection" namespace="AppleMusic\Model\Collection" fullPackage="AppleMusic" package="AppleMusic">
-          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
-        </class>
-        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="29" type="method" name="getIterator" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="37" type="method" name="count" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <metrics loc="41" ncloc="27" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
-      </file>
-      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/Collection/ArtistCollection.php">
-        <class name="AppleMusic\Model\Collection\ArtistCollection" namespace="AppleMusic\Model\Collection" fullPackage="AppleMusic" package="AppleMusic">
-          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
-        </class>
-        <line num="17" type="method" name="addItem" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <line num="27" type="method" name="getItemByArtistName" visibility="public" complexity="3" crap="12.00" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <metrics loc="38" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
-      </file>
-      <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/AppleMusic/Model/Collection/TrackCollection.php">
-        <class name="AppleMusic\Model\Collection\TrackCollection" namespace="AppleMusic\Model\Collection" fullPackage="AppleMusic" package="AppleMusic">
-          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
-        </class>
-        <line num="17" type="method" name="addItem" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <metrics loc="21" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        <metrics loc="13" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
     <package name="AppleMusic\Model\Error">
@@ -1889,6 +1885,6 @@
         <metrics loc="68" ncloc="48" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="18" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="84" loc="4427" ncloc="3799" classes="56" methods="391" coveredmethods="341" conditionals="0" coveredconditionals="0" statements="977" coveredstatements="746" elements="1368" coveredelements="1087"/>
+    <metrics files="88" loc="4393" ncloc="3785" classes="52" methods="383" coveredmethods="341" conditionals="0" coveredconditionals="0" statements="959" coveredstatements="746" elements="1342" coveredelements="1087"/>
   </project>
 </coverage>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppleMusic;
+namespace AppleMusic;
 
 use AppleMusic\Utils\KeyService;
 use Symfony\Contracts\HttpClient\HttpClientInterface;

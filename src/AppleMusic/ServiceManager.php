@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppleMusic;
+namespace AppleMusic;
 
 use AppleMusic\Manager\AlbumManager;
 use AppleMusic\Manager\ArtistManager;

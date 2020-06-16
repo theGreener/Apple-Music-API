@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace AppleMusic\Utils;
 
 class KeyService
@@ -15,7 +17,7 @@ class KeyService
      * @param string $privateKeyFile
      * @param string $userTokenFile
      */
-    public function __construct($teamIdFile, $keyIdFile, $privateKeyFile, $userTokenFile)
+    public function __construct(string $teamIdFile, string $keyIdFile, string $privateKeyFile, string $userTokenFile)
     {
         $this->teamIdFile = $teamIdFile;
         $this->keyIdFile = $keyIdFile;
@@ -26,30 +28,30 @@ class KeyService
     /**
      * @return string
      */
-    public function getUserToken()
+    public function getUserToken(): string
     {
-        return (string) $this->getFileContents($this->userTokenFile);
+        return $this->getFileContents($this->userTokenFile);
     }
 
-    public function getPrivateKeyFilePath()
+    public function getPrivateKeyFilePath(): string
     {
-        return (string) $this->privateKeyFile;
-    }
-
-    /**
-     * @return string
-     */
-    public function getKeyID()
-    {
-        return (string) $this->getFileContents($this->keyIdFile);
+        return $this->privateKeyFile;
     }
 
     /**
      * @return string
      */
-    public function getTeamID()
+    public function getKeyID(): string
     {
-        return (string) $this->getFileContents($this->teamIdFile);
+        return $this->getFileContents($this->keyIdFile);
+    }
+
+    /**
+     * @return string
+     */
+    public function getTeamID(): string
+    {
+        return $this->getFileContents($this->teamIdFile);
     }
 
     /**
@@ -57,7 +59,7 @@ class KeyService
      *
      * @return string
      */
-    private function getFileContents($file)
+    private function getFileContents(string $file): string
     {
         if (file_exists($file)) {
             return trim(file_get_contents($file));

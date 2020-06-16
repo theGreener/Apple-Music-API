@@ -4,12 +4,21 @@ declare(strict_types=1);
 
 namespace AppleMusic\Manager;
 
+use AppleMusic\HttpClient;
+use AppleMusic\Hydrator\AlbumHydrator;
 use AppleMusic\Model\Album;
 use AppleMusic\Model\AlbumResponse;
 use AppleMusic\Model\LibraryAlbumResponse;
 
 class AlbumManager extends AbstractManager
 {
+    public function __construct(HttpClient $client, AlbumHydrator $hydrator)
+    {
+        $this->hydrator = $hydrator;
+        
+        parent::__construct($client);
+    }
+
     /**
      * Fetch an album by using its identifier.
      *

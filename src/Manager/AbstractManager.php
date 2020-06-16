@@ -3,7 +3,6 @@
 namespace AppleMusic\Manager;
 
 use AppleMusic\HttpClient;
-use AppleMusic\Hydrator\HydratorInterface;
 
 abstract class AbstractManager
 {
@@ -12,11 +11,9 @@ abstract class AbstractManager
 
     /**
      * @param HttpClient $client
-     * @param HydratorInterface $hydrator
      */
-    public function __construct(HttpClient $client, HydratorInterface $hydrator)
+    public function __construct(HttpClient $client)
     {
         $this->client = $client;
-        $this->hydrator = $hydrator;
     }
 }

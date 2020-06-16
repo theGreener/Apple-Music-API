@@ -16,7 +16,7 @@ class ArtworkHydrator
         foreach (get_object_vars($data) as $property => $value) {
             $methodName = 'set' . ucfirst($property);
             
-            if (method_exists($artwork, $methodName)) {
+            if (is_callable([$artwork, $methodName]), true) {
                 $artwork->$methodName($value);
             }
         }

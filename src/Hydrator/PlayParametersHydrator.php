@@ -12,7 +12,7 @@ class PlayParametersHydrator
         foreach (get_object_vars($data) as $property => $value) {
             $methodName = 'set' . ucfirst($property);
             
-            if (method_exists($playParameters, $methodName)) {
+            if (is_callable([$playParameters, $methodName]), true) {
                 $playParameters->$methodName($value);
             }
         }

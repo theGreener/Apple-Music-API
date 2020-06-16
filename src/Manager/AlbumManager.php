@@ -35,7 +35,7 @@ class AlbumManager extends AbstractManager
         string $include = ''
     ): Album {
         $response = $this->client->get(
-            sprintf("v1/catalog/%s/albums/%s?l%s&include=%s", $id, $storefront, $l, $include)
+            sprintf("/v1/catalog/%s/albums/%s?l%s&include=%s", $storefront, $id, $l, $include)
         );
 
         $album = new Album();

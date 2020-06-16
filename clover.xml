@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592332194">
-  <project timestamp="1592332194">
+<coverage generated="1592332876">
+  <project timestamp="1592332876">
     <package name="AppleMusic">
       <file name="/Users/andy/Sites/GitHub/Apple-Music-API/src/ApiTokenGenerator.php">
         <class name="AppleMusic\ApiTokenGenerator" namespace="AppleMusic">

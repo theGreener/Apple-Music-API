@@ -7,7 +7,6 @@ use AppleMusic\HttpClient;
 abstract class AbstractManager
 {
     protected $client;
-    protected $hydrator;
 
     /**
      * @param HttpClient $client

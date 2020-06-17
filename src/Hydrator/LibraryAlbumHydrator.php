@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace AppleMusic\Hydrator;
 
-use AppleMusic\Model\Album;
 use AppleMusic\Model\Artwork;
-use AppleMusic\Model\EditorialNotes;
+use AppleMusic\Model\LibraryAlbum;
 use AppleMusic\Model\PlayParameters;
-use DateTime;
 
-class AlbumHydrator
+class LibraryAlbumHydrator
 {
     protected $artworkHydrator;
     protected $editorialNotesHydrator;
@@ -26,7 +24,7 @@ class AlbumHydrator
         $this->playParametersHydrator = $playParametersHydrator;
     }
 
-    public function hydrate(Album &$album, $data)
+    public function hydrate(LibraryAlbum &$album, $data)
     {
         $album
             ->setId($data->id)
@@ -41,33 +39,11 @@ class AlbumHydrator
             $this->artworkHydrator->hydrate($artwork, $data->attributes->artwork);
             $album->setArtwork($artwork);
         }
-        
+
         if (isset($data->attributes->contentRating)) {
             $album->setContentRating($data->attributes->contentRating);
         }
-        
-        if (isset($data->attributes->copyright)) {
-            $album->setCopyright($data->attributes->copyright);
-        }
 
-        if (isset($data->attributes->editorialNotes)) {
-            $editorialNotes = new EditorialNotes();
-            $this->editorialNotesHydrator->hydrate($editorialNotes, $data->attributes->editorialNotes);
-            $album->setEditorialNotes($editorialNotes);
-        }
-
-        if (isset($data->attributes->genreNames)) {
-            $album->setGenreNames($data->attributes->genreNames);
-        }
-
-        if (isset($data->attributes->isComplete)) {
-            $album->setIsComplete($data->attributes->isComplete);
-        }
-
-        if (isset($data->attributes->isSingle)) {
-            $album->setIsSingle($data->attributes->isSingle);
-        }
-        
         if (isset($data->attributes->name)) {
             $album->setName($data->attributes->name);
         }
@@ -78,26 +54,8 @@ class AlbumHydrator
             $album->setPlayParams($playParams);
         }
 
-        if (isset($data->attributes->recordLabel)) {
-            $album->setRecordLabel($data->attributes->recordLabel);
-        }
-
         if (isset($data->attributes->trackCount)) {
             $album->setTrackCount($data->attributes->trackCount);
-        }
-
-        if (isset($data->attributes->url)) {
-            $album->setUrl($data->attributes->url);
-        }
-
-        if (isset($data->attributes->isMasteredForItunes)) {
-            $album->setIsMasteredForItunes($data->attributes->isMasteredForItunes);
-        }
-
-        if (isset($data->attributes->releaseDate)) {
-            $album->setReleaseDate(
-                new DateTime($data->attributes->releaseDate)
-            );
         }
     }
 }

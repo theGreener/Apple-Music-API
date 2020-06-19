@@ -2,7 +2,7 @@
 
 namespace AppleMusic;
 
-use AppleMusic\Utils\KeyService;
+use AppleMusic\KeyService;
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Signer\Ecdsa\Sha256;
 use Lcobucci\JWT\Signer\Key;

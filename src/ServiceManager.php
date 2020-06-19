@@ -109,7 +109,7 @@ class ServiceManager
     /**
      * @param string $id
      *
-     * @return ArtistCollection
+     * @return Album
      */
     public function getAlbum($id)
     {

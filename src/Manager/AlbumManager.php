@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace AppleMusic\Manager;
 
 use AppleMusic\HttpClient;
-use AppleMusic\Hydrator\AlbumHydrator;
-use AppleMusic\Hydrator\LibraryAlbumHydrator;
-use AppleMusic\Model\Album;
-use AppleMusic\Model\LibraryAlbum;
+use AppleMusic\Hydrator\Album\AlbumHydrator;
+use AppleMusic\Hydrator\Album\LibraryAlbumHydrator;
+use AppleMusic\Model\Album\Album;
+use AppleMusic\Model\Album\LibraryAlbum;
 
 class AlbumManager extends AbstractManager
 {
@@ -23,7 +23,6 @@ class AlbumManager extends AbstractManager
         $this->albumHydrator = $albumHydrator;
         $this->libraryAlbumHydrator = $libraryAlbumHydrator;
 
-        
         parent::__construct($client);
     }
 
@@ -56,6 +55,7 @@ class AlbumManager extends AbstractManager
 
         $album = new Album();
         $this->albumHydrator->hydrate($album, $response->data[0]);
+
         return $album;
     }
 
@@ -88,6 +88,7 @@ class AlbumManager extends AbstractManager
 
         $album = new Album();
         $this->albumHydrator->hydrate($album, $response->data[0]);
+
         return $album;
     }
 
@@ -156,6 +157,7 @@ class AlbumManager extends AbstractManager
 
         $album = new LibraryAlbum();
         $this->libraryAlbumHydrator->hydrate($album, $response->data[0]);
+
         return $album;
     }
 
@@ -186,6 +188,7 @@ class AlbumManager extends AbstractManager
 
         $album = new LibraryAlbum();
         $this->libraryAlbumHydrator->hydrate($album, $response->data[0]);
+
         return $album;
     }
 
@@ -267,7 +270,6 @@ class AlbumManager extends AbstractManager
 
             $url = $response->next ?? null;
         } while (!is_null($url));
-        
 
         return $albums;
     }

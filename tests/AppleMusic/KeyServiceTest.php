@@ -3,6 +3,7 @@
 namespace Tests;
 
 use AppleMusic\KeyService;
+use AppleMusic\Exception\NotFoundException;
 use PHPUnit\Framework\TestCase;
 
 class KeyServiceTest extends TestCase
@@ -51,5 +52,18 @@ class KeyServiceTest extends TestCase
             '12AB34CD5E',
             $this->keyService->getTeamID()
         );
+    }
+
+    public function testThrowsNotFoundException()
+    {
+        $keyService = new KeyService(
+            __DIR__ . '/Fixtures/null',
+            '',
+            '',
+            ''
+        );
+
+        $this->expectException(NotFoundException::class);
+        $keyService->getTeamID();
     }
 }

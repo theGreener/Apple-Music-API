@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AppleMusic;
 
+use AppleMusic\Exception\NotFoundException;
+
 class KeyService
 {
     private $teamIdFile;
@@ -67,7 +69,7 @@ class KeyService
         if (file_exists($file)) {
             return trim(file_get_contents($file));
         } else {
-            die($file.' not found.');
+            throw new NotFoundException(sprintf("File %s not found.", $file));
         }
     }
 }
